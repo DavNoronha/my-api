@@ -1,7 +1,5 @@
-const express = require('express');
+const custonExpress = require('./config/custonExpress.js');
 
-const app = express();
-
-app.get('/', (req, res) => res.send('Hello World Bro'))
+const app = custonExpress();
 
 app.listen(3000)
